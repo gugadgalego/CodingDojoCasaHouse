@@ -14,6 +14,8 @@
 		4EE1FCA52A86A05D00CF7615 /* CardFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FCA42A86A05D00CF7615 /* CardFrontView.swift */; };
 		4EE1FCA72A86A82B00CF7615 /* CardBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FCA62A86A82B00CF7615 /* CardBackView.swift */; };
 		4EE1FCA92A86A90B00CF7615 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FCA82A86A90B00CF7615 /* CardView.swift */; };
+		4EE1FCAB2A86AFC000CF7615 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FCAA2A86AFC000CF7615 /* CreditCardView.swift */; };
+		4EE1FCAD2A86B03100CF7615 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FCAC2A86B03100CF7615 /* CreditCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		4EE1FCA42A86A05D00CF7615 /* CardFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontView.swift; sourceTree = "<group>"; };
 		4EE1FCA62A86A82B00CF7615 /* CardBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackView.swift; sourceTree = "<group>"; };
 		4EE1FCA82A86A90B00CF7615 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4EE1FCAA2A86AFC000CF7615 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		4EE1FCAC2A86B03100CF7615 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				4EE1FCA42A86A05D00CF7615 /* CardFrontView.swift */,
 				4EE1FCA62A86A82B00CF7615 /* CardBackView.swift */,
 				4EE1FCA82A86A90B00CF7615 /* CardView.swift */,
+				4EE1FCAA2A86AFC000CF7615 /* CreditCardView.swift */,
+				4EE1FCAC2A86B03100CF7615 /* CreditCard.swift */,
 				4EE1FC9A2A869F3300CF7615 /* Assets.xcassets */,
 				4EE1FC9C2A869F3300CF7615 /* Preview Content */,
 			);
@@ -148,9 +154,11 @@
 			files = (
 				4EE1FC992A869F3200CF7615 /* ContentView.swift in Sources */,
 				4EE1FC972A869F3200CF7615 /* CodingDojoCasaHouseApp.swift in Sources */,
+				4EE1FCAD2A86B03100CF7615 /* CreditCard.swift in Sources */,
 				4EE1FCA52A86A05D00CF7615 /* CardFrontView.swift in Sources */,
 				4EE1FCA72A86A82B00CF7615 /* CardBackView.swift in Sources */,
 				4EE1FCA92A86A90B00CF7615 /* CardView.swift in Sources */,
+				4EE1FCAB2A86AFC000CF7615 /* CreditCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
