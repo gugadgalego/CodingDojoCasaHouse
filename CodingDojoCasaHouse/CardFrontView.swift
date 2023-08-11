@@ -50,7 +50,7 @@ struct CardFrontView: View {
                 .font(.system(size: 12))
         }
         .frame(width:350, height:240)
-        .background(Color.white.shadow(radius: 3))
+        .background(Color("Fundo").shadow(radius: 3))
         .foregroundColor(Color("Azul"))
     }
 }
