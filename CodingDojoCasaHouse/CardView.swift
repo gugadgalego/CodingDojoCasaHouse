@@ -14,15 +14,13 @@ struct CardView: View {
     var body: some View {
         VStack {
             if screen {
-                CardFrontView().onTapGesture {
-                    screen.toggle()
-                }
+                CardFrontView()
             }
             else{
-                CardBackView().onTapGesture {
-                    screen.toggle()
-                }
+                CardBackView()
             }
+        }.onTapGesture {
+            screen.toggle()
         }
     }
 }
