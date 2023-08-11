@@ -12,14 +12,25 @@ struct CreditCard: View {
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "rectangle.split.3x3.fill")
+                    .resizable()
+                    .frame(width: 70, height: <#T##CGFloat?#>)
                 Spacer()
                 Image(systemName: "circlebadge.2.fill")
             }
+            .padding(.bottom)
             Text("XXXX XXXX XXXX 1234")
-            Text("02/01")
-            Text("Raphael Iniesta")
+                .padding(.bottom, 5)
+            Group {
+                Text("02/01")
+                    .font(.system(size: 12))
+                Text("Raphael Iniesta")
+            }
+            .font(.custom("Myriad", size: 18))
         }
-        .frame(width: 225, height: 125)
+        .padding()
+        .frame(width: 250, height: 150)
+        .background(.orange)
+        .cornerRadius(10)
     }
 }
 
