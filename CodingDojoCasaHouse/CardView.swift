@@ -9,17 +9,19 @@ import SwiftUI
 
 
 struct CardView: View {
-    @State var screen: Int = 0
+    @State var screen: Bool = true
     
     var body: some View {
-        if screen == 0{
-            CardFrontView().onTapGesture {
-                screen = 1
+        VStack {
+            if screen {
+                CardFrontView().onTapGesture {
+                    screen.toggle()
+                }
             }
-        }
-        else{
-            CardBackView().onTapGesture {
-                screen = 0
+            else{
+                CardBackView().onTapGesture {
+                    screen.toggle()
+                }
             }
         }
     }

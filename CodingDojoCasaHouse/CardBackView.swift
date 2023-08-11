@@ -18,7 +18,7 @@ struct CardBackView: View {
             
         }
         .frame(width:350, height:240)
-        .background(Color("Azul").shadow(radius: 3))
+        .background(LinearGradient(gradient: Gradient(colors: [Color(red: 20/255, green: 39/255, blue: 80/255)]), startPoint: <#T##UnitPoint#>, endPoint: <#T##UnitPoint#>) Color("Azul").shadow(radius: 3))
         .foregroundColor(Color.white)
     
     }

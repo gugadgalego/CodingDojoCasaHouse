@@ -35,19 +35,22 @@ struct CardFrontView: View {
             Spacer()
             HStack {
                 Text("web:")
-                    
                     .bold()
+                
                 Text(verbatim: "www.bonito.com")
                     .foregroundColor(Color("Cinza"))
-            }.font(.system(size: 12))
+            }
+            .font(.system(size: 12))
             HStack {
                 Text("tel:")
                     .bold()
                 Text("130-790-570")
                     .foregroundColor(Color("Cinza"))
                     
-            }.padding(.bottom)
-                .font(.system(size: 12))
+            }
+            .padding(.bottom)
+            .font(.system(size: 12))
+            
         }
         .frame(width:350, height:240)
         .background(Color("Fundo").shadow(radius: 3))
