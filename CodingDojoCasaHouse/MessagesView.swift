@@ -21,10 +21,28 @@ struct MessagesView: View {
                     HStack {
                         if message.isOn {
                             Circle()
-                                .frame(width: 20)
-                                .foregroundColor(<#T##color: Color?##Color?#>)
+                                .frame(width: 8)
+                                .foregroundColor(.blue)
+                        } else {
+                            Circle()
+                                .frame(width: 8)
+                                .foregroundColor(.clear)
                         }
-                        Text(message.name)
+                        Image("Diego")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: 60)
+                        VStack (alignment: .leading){
+                            HStack {
+                                Text(message.name)
+                                    .bold()
+                                Spacer()
+                                Text(message.date)
+                                
+                            }
+                            Text(message.message)
+                            
+                        }
                     }
                 }
             }.navigationTitle("Mensagens")
