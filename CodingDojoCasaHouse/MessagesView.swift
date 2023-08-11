@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MessagesView: View {
-    let messages = [MessagesModel(name: "Diego", message: "Oi, tudo bem?", pic: "Diego", isOn: true, date: "3:14PM"),
+    var messages = [MessagesModel(name: "Diego", message: "Oi, tudo bem?", pic: "Diego", isOn: true, date: "3:14PM"),
                     MessagesModel(name: "Diego", message: "Oi, tudo bem?", pic: "Diego", isOn: true, date: "3:14PM"),
                     MessagesModel(name: "Diego", message: "Oi, tudo bem?", pic: "Diego", isOn: false, date: "3:14PM"),
                     MessagesModel(name: "Diego", message: "Oi, tudo bem?", pic: "Diego", isOn: false, date: "3:14PM"),
@@ -38,15 +38,20 @@ struct MessagesView: View {
                                     .bold()
                                 Spacer()
                                 Text(message.date)
+                                    .font(.system(size:12).weight(.light))
+                                    .foregroundColor(.gray)
                                 
                             }
                             Text(message.message)
                             
                         }
                     }
-                    .background(message.isOn ? Color.gray : Color.white)
+                    .listRowBackground(message.isOn ? Color("Mensagem") : Color.white)
+                    
                 }
+                
             }.navigationTitle("Mensagens")
+                .listStyle(.plain)
         }
     }
 }
