@@ -19,6 +19,7 @@ struct CreditCardView: View {
                         .font(.title3)
                         .bold()
                     Text("Including yours")
+                        .foregroundColor(.gray)
                 }
                 .frame(width:300,height:170)
                 .background(.white)
@@ -32,18 +33,14 @@ struct CreditCardView: View {
                 
             } label: {
                 ZStack {
-                    LinearGradient(gradient: Gradient(colors: [Color("pink"), Color("orange")]), startPoint: .bottom, endPoint: .top)
+                    LinearGradient(gradient: Gradient(colors: [Color("pink"), Color("orange")]), startPoint: .bottomLeading, endPoint: .topTrailing)
                         .frame(width:60,height:60)
                         .clipShape(Circle())
                     
                     Image(systemName: "arrow.right")
                         .foregroundColor(.white)
                         .font(.title)
-                        
-                    
-                        
-                    
-                }
+                }.opacity(0.75)
             }.offset(y:-30)
         }
         

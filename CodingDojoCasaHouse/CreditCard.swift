@@ -30,7 +30,7 @@ struct CreditCard: View {
                     .foregroundColor(.white)
                     .opacity(0.8)
                 Text("RAPHAEL INIESTA")
-                    .font(.system(size:50))
+                    .font(.system(size:14))
                     .foregroundColor(.white)
                 
             }
