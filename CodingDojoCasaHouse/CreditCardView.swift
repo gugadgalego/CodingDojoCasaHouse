@@ -23,17 +23,19 @@ struct CreditCardView: View {
                 .frame(width:300,height:170)
                 .background(.white)
             }
-            .background(LinearGradient(gradient: Gradient(colors: [Color(red: 255/255, green: 128/255, blue: 121/255), Color(red: 246/255, green:220/255, blue: 138/255)]), startPoint: .trailing, endPoint: .leading))
+            .background(LinearGradient(gradient: Gradient(colors: [Color("pink"), Color("orange")]), startPoint: .trailing, endPoint: .leading))
             .cornerRadius(20)
             .compositingGroup()
             .shadow(radius:10)
+            
             Button {
                 
             } label: {
                 ZStack {
                     Circle()
                     .frame(width:60,height:60)
-                        .background(LinearGradient(gradient: Gradient(colors: [Color(red: 255/255, green: 128/255, blue: 121/255), Color(red: 246/255, green:220/255, blue: 138/255)]), startPoint: .topTrailing, endPoint: .bottomLeading))
+                    Image(systemName: <#T##String#>)
+                        
                     
                 }
             }.offset(y:-40)
