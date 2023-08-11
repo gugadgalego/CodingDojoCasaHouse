@@ -44,6 +44,7 @@ struct MessagesView: View {
                             
                         }
                     }
+                    .background(message.isOn ? Color.gray : Color.white)
                 }
             }.navigationTitle("Mensagens")
         }

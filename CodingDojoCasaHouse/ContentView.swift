@@ -11,10 +11,27 @@ struct ContentView: View {
     var body: some View {
         TabView {
             CardView()
+                .tabItem {
+                    Image(systemName: "list.dash.header.rectangle")
+                        
+                    Text("Card")
+                }
             
             CreditCardView()
+                .tabItem {
+                    Image(systemName: "creditcard")
+                    
+                    Text("Bank")
+                }
+            MessagesView()
+                .tabItem {
+                    Image(systemName: "list.bullet.rectangle")
+                    
+                    Text("Messages")
+                }
+            
         }
-        .padding()
+//        .padding()
     }
 }
 
