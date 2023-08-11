@@ -11,9 +11,9 @@ struct CreditCardView: View {
     var body: some View {
         VStack(spacing: 0) {
             VStack {
-                ZStack {
-                    
-                }
+                
+                
+                Text("Banks are supported")
             }
          }
     }
