@@ -32,13 +32,19 @@ struct CreditCardView: View {
                 
             } label: {
                 ZStack {
-                    Circle()
-                    .frame(width:60,height:60)
-                    Image(systemName: <#T##String#>)
+                    LinearGradient(gradient: Gradient(colors: [Color("pink"), Color("orange")]), startPoint: .bottom, endPoint: .top)
+                        .frame(width:60,height:60)
+                        .clipShape(Circle())
+                    
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.white)
+                        .font(.title)
+                        
+                    
                         
                     
                 }
-            }.offset(y:-40)
+            }.offset(y:-30)
         }
         
 

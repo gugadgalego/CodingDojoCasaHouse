@@ -12,6 +12,8 @@ struct CreditCard: View {
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "rectangle.split.3x3.fill")
+                    .opacity(0.8)
+//                    .symbolRenderingMode(SymbolRenderingMode.hierarchical)
                 Spacer()
                 Image(systemName: "circlebadge.2.fill")
                     
@@ -28,6 +30,7 @@ struct CreditCard: View {
                     .foregroundColor(.white)
                     .opacity(0.8)
                 Text("RAPHAEL INIESTA")
+                    .font(.system(size:50))
                     .foregroundColor(.white)
                 
             }
